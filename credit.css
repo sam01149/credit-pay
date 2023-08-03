@@ -1,0 +1,134 @@
+*{
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 171, 77);
+    
+}
+.container{
+    width: 100%;
+    margin: 100px 50px;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.payment.check-layout{
+    padding: 30px;
+}
+.payment-nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    text-align: center;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.payment-nav a{
+    color: black;
+}
+.payment-nav a:hover{
+   color: rgb(167, 117, 11);
+}
+
+#logo{
+    color: rgb(180, 156, 16);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+}
+.payment-detailise{
+    padding :30px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+.payment-detailise img{
+    margin-top:100px;
+}
+.payment-data{
+    width: 400px;
+    height: 500px;
+    margin-top:-20px
+}
+.payment-data h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#input{
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    width: 350px; 
+    outline: none;
+}
+#input[type=text]:focus-visible{
+    color:rgb(167, 117, 11);
+    border-bottom: 2px solid rgb(167, 117, 11);;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+input[type=number]:focus-visible{
+    color:rgb(167, 117, 11);
+    border-bottom: 2px solid rgb(167, 117, 11);;
+}
+input[type=password]:focus-visible{
+    color:rgb(167, 117, 11);
+    outline: 2px solid rgb(167, 117, 11);;
+    
+}
+input[type=date]:focus-visible{
+    color:rgb(167, 117, 11);
+    
+}
+#input1{
+    float: left;
+}
+.d_c{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pay{
+    display: block;
+    width:350px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(206, 148, 25);
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.pay:hover{
+    background-color: rgb(167, 117, 11);
+    transition-delay:0.1s;
+
+}
+
+@media(max-width: 1000px){
+    .payment-detailise{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        
+    }
+    .payment-detailise img{
+        margin-top: 40px;
+    }
+    .container{
+        width: auto;
+    }
+    .payment-data{
+        height: auto;
+        margin-top: -50px;
+    }
+}
